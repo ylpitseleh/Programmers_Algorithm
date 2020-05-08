@@ -29,12 +29,10 @@ public class 튜플2 {
 		int idx = 0;
 		String[] strs = s.split(",");
 		for (int i=0; i<strs.length; i++) {
-			//System.out.println(strs[i]);
-			//System.out.println();
 			int nextFlag = 0; //다음 줄로 넘어감
 			if (strs[i].contains("}"))
 				nextFlag = 1;
-			strs[i] = strs[i].replaceAll("[^0-9]","");
+			strs[i] = strs[i].replaceAll("[^0-9]",""); //0~9가 아니면 없애기
 			a[idx].add(Integer.parseInt(strs[i]));
 			if (nextFlag == 1)
 				idx++;

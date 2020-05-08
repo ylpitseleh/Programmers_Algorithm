@@ -15,7 +15,6 @@ public class 크레인인형뽑기게임1 {
 		
 		for (int i=0; i<moves.length; i++) {
 			for (int j=0; j<board[0].length; j++) {
-				System.out.println(j);
 				if (board[j][moves[i]-1] != 0) {
 					//ArrayList에 해당 원소 추가
 					al.add(board[j][moves[i]-1]);
