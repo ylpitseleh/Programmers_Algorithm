@@ -44,42 +44,13 @@ public class 불량사용자3 {
 			System.out.println(a[i]);
 		}
 		System.out.println();
-		/*
-		ArrayList<String> []ansTmp;
-		ansTmp = new ArrayList[banned_id.length]; //경우의 수 최대값
-		for (int i=0; i<banned_id.length; i++)
-			ansTmp[i] = new ArrayList<String>();
-		*/
+		
 		HashSet<String> []ansTmp;
 		ansTmp = new HashSet[banned_id.length];
 		for (int i=0; i<banned_id.length; i++)
 			ansTmp[i] = new HashSet<String>();
 		
-		//HashSet<String> hs = new HashSet<String>();
-		int flag = 0;
-		for (int i=0; i<a.length; i++) { // 4
-			flag = 0;
-			for (int j=0; j<a[i].size(); j++) { // 2
-				//System.out.println(a[i].get(j));
-				/*
-				for (int k=0; k<ansTmp.length; k++) {
-					if (!ansTmp[k].contains(a[i].get(j))) {
-						ansTmp[k].add(a[i].get(j));
-						flag = 1;
-						//break ;
-					}
-				}*/
-				for (int k=0; k<ansTmp.length; k++) {
-					ansTmp[k].add(a[i].get(j));
-				}
-				if (flag == 1)
-					break ;
-			}
-		}
-		
-		for (int i=0; i<banned_id.length; i++) {
-			System.out.println(ansTmp[i]);
-		}
+	
 	}
 
 }
