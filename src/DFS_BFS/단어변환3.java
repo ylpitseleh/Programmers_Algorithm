@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class 단어변환3 {
-	static Queue q = new LinkedList<String>();
+	static Queue q = new LinkedList<StringAndIdx>();
 	static class StringAndIdx {
 		String s;
 		int idx;
