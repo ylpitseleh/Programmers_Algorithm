@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public class _2풀기 {
 
 	public static void main(String[] args) {
-		//String expression = "100-200*300-500+20";
+		String expression = "100-200*300-500+20";
 		// * > + > -
-		String expression = "50*6-3*2";
+		//String expression = "50*6-3*2";
 		// - > *
 		long answer = 0;
 		
@@ -41,14 +41,14 @@ public class _2풀기 {
 		ArrayList alOper = new ArrayList<Character>();
 		//alNum.addAll(alNumOriginal);
 		//alOper.addAll(alOperOriginal);
-		
+		/*
 		System.out.println(alNum);
 		System.out.println(alOper);
 		System.out.println(alNumOriginal);
 		System.out.println(alOperOriginal);
 		System.out.println("N : " + N);
 		System.out.println();
-		
+		*/
 		int operLen = alOperOriginal.size();
 		for (int i=0; i<operPrior.length; i++) { // oper.length = 6
 			alNum.clear();
@@ -94,12 +94,12 @@ public class _2풀기 {
 			}
 			int n = (int) alNum.get(0);
 			answer = Math.max(answer, Math.abs(n));
-			System.out.println(answer);
-			System.out.println("alNum : "+alNum);
-			System.out.println(alOper);
-			System.out.println();
+			//System.out.println(answer);
+			//System.out.println("alNum : "+alNum);
+			//System.out.println(alOper);
+			//System.out.println();
 		}
-		
+		System.out.println(answer);
 	}
 
 }
