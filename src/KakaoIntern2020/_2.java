@@ -5,7 +5,8 @@ import java.util.LinkedList;
 public class _2 {
 
 	public static void main(String[] args) {
-		String expression = new String("50*6-3*2");
+		//String expression = new String("50*6-3*2");
+		String expression = "100-200-300-500*20";
 		long[] resultArr = new long[6];
 
 		LinkedList operatorQueue = new LinkedList<Character>();
@@ -125,8 +126,8 @@ public class _2 {
 				result = resultArr[i];
 			}
 		}
-
 		System.out.println(result);
+
 	}
 
 	public static long dfs(String expression, LinkedList<Character> operatorQueue) {
@@ -149,6 +150,9 @@ public class _2 {
 				break;
 			}
 		}
+		
+		//System.out.println(result);
+		
 		return result;
 	}
 
