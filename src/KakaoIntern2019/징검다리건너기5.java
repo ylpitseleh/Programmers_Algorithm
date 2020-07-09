@@ -10,7 +10,7 @@ public class 징검다리건너기5 {
 		
 		while (true) {
 			int i = 0;
-			int seq = 0;
+			int seq = 0; // 밟을 수 없는 연속된 징검다리의 개수
 			
 			for (int j=0; j<stones.length; j++)
 				System.out.print(stones[j]+" ");
