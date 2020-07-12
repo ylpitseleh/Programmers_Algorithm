@@ -13,7 +13,7 @@ public class 기능개발3 {
 		int[] answer = {};
 		/*
 		원래는 {7일 후, 3일 후, 9일 후} 배포 가능이지만 
-		앞에 있는 기능이 배포될 때 함꼐 배포되므로 7일째에 2개, 9일째에 1개 배포됨.
+		앞에 있는 기능이 배포될 때 함께 배포되므로 7일째에 2개, 9일째에 1개 배포됨.
 		*/
 		int N = progresses.length;
 		int daysNeeded[] = new int[N];
