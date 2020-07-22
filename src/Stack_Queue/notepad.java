@@ -2,7 +2,7 @@ package Stack_Queue;
 
 import java.util.ArrayList;
 
-public class 기능개발3 {
+public class notepad {
 
 	public static void main(String[] args) {
 		int progresses[] = {93,30,55};
