@@ -1,11 +1,10 @@
 package level2;
-
+/*
+ * 소요 시간: 20분
+ * ★★★★☆, Cheating : O
+ * 노잼 수학 문제. 이런 쓸데없는 문제 극혐.
+ */
 public class 멀쩡한사각형 {
-	/*
-	 * 소요 시간: 20분
-	 * ★★★★☆, Cheating : O
-	 * 노잼 수학 문제. 이런 쓸데없는 문제 극혐.
-	 */
 	public static void main(String[] args) {
 		int w = 8;
 		int h = 12;
