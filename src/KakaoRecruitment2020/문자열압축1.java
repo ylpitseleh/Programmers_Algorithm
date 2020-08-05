@@ -11,7 +11,7 @@ public class 문자열압축1 {
 		//String s = "abcabcdede";
 		//String s = "abcabcabcabcdededededede";
 		//String s = "xababcdcdababcdcd";
-		String s = "a";
+		String s = "abababaaaaaaaa";
 		
 		String ans = null;
 		int answer = Integer.MAX_VALUE;
@@ -26,6 +26,7 @@ public class 문자열압축1 {
 				if (j+i >= sLen) { //al 맨 마지막 원소
 					String tmpS = s.substring(j, sLen);
 					al.add(tmpS);
+					//System.out.println(al);
 					if (al.get(al.size()-2).equals(tmpS)) { // 같으면
 						cnt++;
 						if (cnt > 1)
@@ -39,13 +40,14 @@ public class 문자열압축1 {
 						ans += al.get(al.size()-1);
 					}
 				}
-				else { // 맨 마지막 뺴고 나머지 모든 원소들
+				else { // 맨 마지막 빼고 나머지 모든 원소들
 					String tmpS = s.substring(j, j+i);
 					al.add(tmpS);
 					if (al.size() > 1) {
 						//System.out.println(al.get(al.size()-2)+", "+tmpS);
-						if (al.get(al.size()-2).equals(tmpS)) { // 같으면
-							cnt++;
+						System.out.println(al);
+						if (al.get(al.size()-2).equals(tmpS)) { // 같으면 
+							cnt++; //al.get(al.size()-2)인 이유 = 나 말고 내 바로 앞에 있는거랑 비교하기 위해서
 						}
 						else { // 다르면
 							if (cnt > 1)
