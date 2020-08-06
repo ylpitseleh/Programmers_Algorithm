@@ -5,7 +5,8 @@ import java.util.PriorityQueue;
 public class 더맵게1 {
 
 	public static int main(String[] args) {
-		int scoville[] = {1, 2, 3, 9, 10, 12};
+		//int scoville[] = {1, 2, 3, 9, 10, 12};
+		int scoville[] = {0,1,0,0};
 		int K = 7;
 		int answer = 0;
 		
