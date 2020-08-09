@@ -1,5 +1,9 @@
 package level2;
-
+/*
+ * 소요 시간: 1시간
+ * ★★☆☆☆, Cheating : X
+ * permu하고 조건만 주면 되는 간단한 문제.
+ */
 public class 단체사진찍기 {
 	static int answer;
 
