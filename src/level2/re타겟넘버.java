@@ -1,6 +1,6 @@
-package DFS_BFS;
-
-public class 타겟넘버1 {
+package level2;
+// 이해 잘 안 됨. 
+public class re타겟넘버 {
 	static int answer = 0;
 	static int target;
 	public static void main(String[] args) {

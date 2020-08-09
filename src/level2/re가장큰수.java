@@ -4,7 +4,7 @@ import java.util.ArrayList;
 /*
  * 나중에 Comparator 공부하고 해야징.. 
  */
-public class 가장큰수_다시 {
+public class re가장큰수 {
 
 	public static void main(String[] args) {
 		//int[] numbers = {6, 10, 2};
