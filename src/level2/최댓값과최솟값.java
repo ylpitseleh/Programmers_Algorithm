@@ -1,5 +1,8 @@
 package level2;
-
+/*
+ * 소요 시간: 10분
+ * ☆☆☆☆☆, Cheating : X
+ */
 import java.util.Arrays;
 
 public class 최댓값과최솟값 {
