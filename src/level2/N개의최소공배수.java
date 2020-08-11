@@ -1,5 +1,8 @@
 package level2;
-
+/*
+ * 소요 시간: 10분
+ * ☆☆☆☆☆, Cheating : X
+ */
 public class N개의최소공배수 {
 
 	public static void main(String[] args) {
