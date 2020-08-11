@@ -37,8 +37,6 @@ public class 다시풀기_2 {
 			nums.addAll(numsOrig);
 			ArrayList opers = new ArrayList<Character>();
 			opers.addAll(opersOrig);
-			//System.out.println();
-			//System.out.println("["+i+"] 현재 우선순위 : "+operPrior[i]);
 			// i번째 우선순위의 몇 번째 연산자인지
 			for (int j=0; j<3; j++) {
 				//System.out.println(j+" "+operPrior[i].charAt(j));

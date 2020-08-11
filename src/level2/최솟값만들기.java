@@ -1,7 +1,11 @@
 package level2;
 
 import java.util.Arrays;
-
+/*
+ * 소요 시간: 10분
+ * ☆☆☆☆☆, Cheating : X
+ * permutation으로 풀었다가 시간초과나서 sort했더니 됐다.
+ */
 public class 최솟값만들기 {
 
 	public static void main(String[] args) {

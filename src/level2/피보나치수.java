@@ -1,5 +1,8 @@
 package level2;
-
+/*
+ * 소요 시간: 5분
+ * ☆☆☆☆☆, Cheating : X
+ */
 public class 피보나치수 {
 
 	public static void main(String[] args) {
