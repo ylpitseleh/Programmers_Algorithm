@@ -10,7 +10,7 @@ import java.util.Comparator;
  * Comparator sort 어떻게 하는지 구글링해서 한 번에 바로 맞췄다. 
  * Comparator랑 Comparable은 코테에 종종 나오는데도 날 잡고 공부하기가 너무 귀찮다. 이해 안 하고 필요할 때만 찾아써야 제맛.
  */
-public class 파일명정렬 {
+public class 파일명정렬_Comparator {
 	static class File {
 		String Head;
 		int Number;
