@@ -1,6 +1,6 @@
 package level2;
 
-// 이해 잘 안 됨. 
+// 이해  안 됨. 으아악 
 public class re타겟넘버 {
 	static int answer = 0;
 	static int target;
@@ -32,8 +32,9 @@ public class re타겟넘버 {
 			return;
 		}
 
-		numbers[depth] *= 1;
+		// numbers[depth] *= 1; //이거 안 해도 답임
 
+		System.out.println("------PLUS-------");
 		System.out.println("depth = " + depth);
 		for (int i = 0; i < numbers.length; i++) {
 			System.out.print(numbers[i] + " ");
