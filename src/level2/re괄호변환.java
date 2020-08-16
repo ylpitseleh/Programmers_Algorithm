@@ -11,10 +11,10 @@ import java.util.Queue;
 public class re괄호변환 {
 	//static String answer = "";
 	public static void main(String[] args) {
-		String p = "(()())()";
+		//String p = "(()())()";
 		//String p = ")(";
 		//String p = "()))((()";
-		//String p = ")()()()(";
+		String p = ")()()()(";
 		
 		String answer = "";
 		
