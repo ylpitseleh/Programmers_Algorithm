@@ -2,7 +2,7 @@ package level3;
 
 import java.util.Arrays;
 
-public class 거스름돈 {
+public class re거스름돈 {
 
 	public static void main(String[] args) {
 		int money[] = {1, 2, 5};
