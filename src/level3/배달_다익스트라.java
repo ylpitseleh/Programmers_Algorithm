@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 /*
  * 소요 시간: 3시간
  * ★★★★☆, Cheating : O
- * 다익스트라 문제 => 힙(Priority Queue) & ArrayList의 List사용! 2중 for문 & 2차원 배열은 시간 초과난다. ex) 노드가 100만개인데 비용 정보가 2개일 때
+ * 다익스트라 문제 => 힙(Priority Queue) & ArrayList의 List사용! 2중 for문 & 2차원 배열은 시간 초과난다. ex) 노드가 100만개인데 비용 정보가 2개일 때 매우 비효율적.
  */
 public class 배달_다익스트라 {
 	static ArrayList<Pair>[] a;
@@ -79,13 +79,13 @@ public class 배달_다익스트라 {
 		// ex) 1에서 4로 가는 비용이 100인데 1->3->4 가 30이라면 d[4]에 30 저장
 		while (!pq.isEmpty()) {
 			Pair p = pq.poll();
-			System.out.println("p.dest : "+p.dest+" p.cost : "+p.cost);
+			System.out.println("< p.dest : "+p.dest+" p.cost : "+p.cost+" >");
 			if (d[p.dest] < p.cost) // 최단 거리가 아닌 경우
 				continue ;
 			
 			for (int i=0; i<a[p.dest].size(); i++) { // p.dest 노드에서 출발하는 것들 
 				int next = a[p.dest].get(i).dest; // 선택된 노드의 인접 노드
-				int nextDist = a[p.dest].get(i).cost + p.cost; // 선택된 노드를 인접 노드로 거쳐서 가는 비용
+				int nextDist = a[p.dest].get(i).cost + p.cost; // ★중요, 선택된 노드를 인접 노드로 거쳐서 가는 비용
 				System.out.println("next : "+next+" nextDist : "+nextDist);
 				if (nextDist < d[next]) { // 기존 보다 더 저렴하면 교체
 					d[next] = nextDist;
