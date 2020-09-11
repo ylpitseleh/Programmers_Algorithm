@@ -4,8 +4,10 @@ import java.util.Arrays;
 /*
  * 소요 시간: 4시간
  * ★★★★★, Cheating : O
+ * 나중에 꼭 다시 풀어보기
  * 너무 복잡하다. 이걸 어떻게 생각해내는지 모르겠다.
  * 위에 while문은 그렇다 쳐도 while문 밑에를 이해를 잘 못하겠다. 
+ * https://leveloper.tistory.com/107
  */
 public class 무지의먹방라이브 {
 
