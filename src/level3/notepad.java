@@ -1,55 +1,37 @@
 package level3;
 
-import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class notepad {
-	static class Pos {
-		int y;
-		int x;
-		Pos (int y, int x) {
-			this.y = y;
-			this.x = x;
-		}
-		
-		public boolean equals(Pos p) {
-	        boolean same = false;
-			if (p != null && p instanceof Pos) {
-	            same = (y == p.y && x == p.x);
-	        }
-	        return same;
-		}
-	}
-	public static void main(String[] args) {
-		int lock[][] = {{1,1,1}, 
-						{1,1,0}, 
-						{1,0,1}};
 
-		int N = lock.length;
-		for (int x=0; x<N; x++) {
-			System.out.println("x = "+x);
-			for (int i=0; i<N-x; i++) {
-				for (int j=0; j<N-x; j++) {
-					System.out.println(" i, j = "+i+" "+j);
-					if (x==0)
-						continue ;
-					for (int k=0; k<x+1; k++) {
-						for (int l=0; l<x+1; l++) {
-							System.out.println("  k, l = "+(i+k)+" "+(j+l));
-						}
-					}
-				}
-			}
-			System.out.println();
+	public static void main(String[] args) {
+		String[] gems = { "DIA", "RUBY", "RUBY", "DIA", "DIA", "EMERALD",
+				"SAPPHIRE", "DIA" };
+		// String[] gems = {"AA", "AB", "AC", "AA", "AC"};
+		// String[] gems = {"XYZ", "XYZ", "XYZ"};
+		// String[] gems = {"ZZZ", "YYY", "NNNN", "YYY", "BBB"};
+		// String[] gems = {"A", "B", "A", "A", "B", "C"};
+		// String[] gems = {"C", "C", "A"};
+		// String[] gems = { "A", "B", "B", "C", "A", "B", "C" }; // 이 테케를
+		// 고려해야함!!
+		// 답 : 3 5
+		HashSet<String> hsTotal = new HashSet<>();
+
+		int N = gems.length;
+		for (int i = 0; i < N; i++) {
+			hsTotal.add(gems[i]);
 		}
 		
-		ArrayList<Pos> al = new ArrayList<>();
-		al.add(new Pos(1, 2));
-		al.add(new Pos(3, 4));
+		int ansStart = -1;
+		int ansEnd = -1;
+		int minLen = Integer.MAX_VALUE;
+		//HashMap<String, Integer> hm = new HashMap<>();
+		int start = 0;
+		int end = 0;
+
 		
-		if (al.contains(new Pos(3, 4)))
-			System.out.println("true");
-		else
-			System.out.println("false");
-	
+		System.out.println(start + " " + end);
 	}
 }
