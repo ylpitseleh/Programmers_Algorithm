@@ -33,7 +33,7 @@ public class 보석쇼핑 {
 		int ansStart = 0;
 		int start = 0;
 		int maxLen = Integer.MAX_VALUE;
-		for (int i=0; i<gems.length; i++) {
+		for (int i=0; i<gems.length; i++) { // 모든 원소 하나씩 넣어주면서 모든 경우의 수 계산하는게 핵심
 			if (!hm.containsKey(gems[i]))
 				hm.put(gems[i], 1);
 			else

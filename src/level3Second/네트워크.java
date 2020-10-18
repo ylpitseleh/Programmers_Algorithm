@@ -1,6 +1,10 @@
-package level3;
-
-public class notepad {
+package level3Second;
+/*
+ * 소요 시간: 20분
+ * ★☆☆☆☆, Cheating : X
+ * 아주 기초 dfs 문제. 
+ */
+public class 네트워크 {
 
 	public static void main(String[] args) {
 		/*
