@@ -16,7 +16,7 @@ import java.util.Collections;
  * 아직 하나의 연결이 부족한데, 모든 섬 방문이 끝났으니 거기서 멈춰버리고, 4를 리턴하게 되죠.
  * 실제로는 0-1-2 섬과 3-4 섬을 이어주는 최소 비용인 [1,3,3] 연결을 수행하고 끝나야 합니다.
  */
-public class 섬연결하기 {
+public class 섬연결하기_크루스칼 {
 	static class Info implements Comparable<Info>{
 		int start;
 		int end;
