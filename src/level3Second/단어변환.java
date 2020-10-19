@@ -31,6 +31,7 @@ public class 단어변환 {
 		//String[] words = {"hot", "dot", "cog", "cot"};
 		//String[] words = {"hot", "cog"};
 		
+		// words 배열에 target이 없으면 0 리턴
 		boolean endFlag = true;
 		for (int i=0; i<words.length; i++) {
 			if (words[i].equals(target))
@@ -47,7 +48,7 @@ public class 단어변환 {
 				if (begin.charAt(j) != words[i].charAt(j))
 					diffCnt++;
 			}
-			
+			// 한 글자만 다른 것 dfs로 탐색
 			if (diffCnt == 1) {
 				boolean[] visited = new boolean[words.length];
 				visited[i] = true;
