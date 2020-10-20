@@ -3,7 +3,11 @@ package level3Second;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.PriorityQueue;
-
+/*
+ * 소요 시간: 30분
+ * ★☆☆☆☆, Cheating : X
+ * 그냥 쉽다. 새로 알게된 사실 -> pq는 Comparable로 커스텀할 수 있다 !
+ */
 public class 이중우선순위큐 {
 
 	public static void main(String[] args) {
